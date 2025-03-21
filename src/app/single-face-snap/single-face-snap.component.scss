@@ -1,36 +1,114 @@
-
+/* Styles de base */
 .face-snap-card {
-    box-sizing: border-box;
-    width: 50%;
-    margin: 20px auto;
-    padding: 10px 30px;
-    box-shadow: lightgray 4px 4px 20px;
+  box-sizing: border-box;
+  /* Largeur par défaut pour les écrans larges */
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
 
-    img {
-      width: 100%;
-    }
+.face-snap-card img {
+  width: 100%;
+  border-radius: 10px;
+}
 
-    h2 {
-      margin-bottom: 0;
-    }
+.face-snap-card h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
 
-    p {
-      font-weight: 300;
-      font-size: 16px;
-    }
+.face-snap-card p {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 10px 0;
+}
 
+.face-snap-card button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.face-snap-card button:hover {
+  background-color: #0056b3;
+}
+
+.face-snap-card span {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.snapped {
+  background-color: rgba(144, 238, 144, 0.4);
+  color: darkgreen;
+}
+
+.snapped button {
+  box-shadow: lightgreen 3px 3px 7px;
+  color: darkgreen;
+}
+
+.snapped button:active {
+  box-shadow: lightgreen 0 0 5px;
+}
+
+/* Media Queries pour le responsive */
+
+/* Pour les tablettes */
+@media (max-width: 768px) {
+  .face-snap-card {
+    /* Augmente la largeur pour les tablettes */
+    width: 70%;
   }
 
-  .snapped {
-    background-color: rgba(lightgreen, 0.4);
-    color: darkgreen;
-
-    button {
-      box-shadow: lightgreen 3px 3px 7px;
-      color: darkgreen;
-
-      &:active {
-        box-shadow: lightgreen 0 0 5px;
-      }
-    }
+  .face-snap-card h1 {
+    font-size: 1.8rem;
   }
+
+  .face-snap-card p {
+    font-size: 14px;
+  }
+
+  .face-snap-card button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .face-snap-card span {
+    font-size: 1rem;
+  }
+}
+
+/* Pour les mobiles */
+@media (max-width: 480px) {
+  .face-snap-card {
+    /* Augmente la largeur pour les mobiles */
+    width: 90%;
+    padding: 10px 20px;
+  }
+
+  .face-snap-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .face-snap-card p {
+    font-size: 12px;
+  }
+
+  .face-snap-card button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .face-snap-card span {
+    font-size: 0.9rem;
+  }
+}
