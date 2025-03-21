@@ -1,0 +1,52 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Prend toute la hauteur de l'écran */
+  min-height: 100vh;
+  /* Dégradé moderne */
+  background: linear-gradient(135deg, #ff6f61, #ffcc00);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found-content {
+  /* Fond semi-transparent */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  /* Effet de flou */
+  backdrop-filter: blur(10px);
+  /* Ombre portée */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.not-found h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.not-found p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: white;
+  color: #ff6f61;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+  /* Légère augmentation de taille au survol */
+  transform: scale(1.05);
+}

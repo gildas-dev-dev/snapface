@@ -1,0 +1,57 @@
+.face-snap-card {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  /* Dégradé bleu-violet */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* Texte en blanc pour contraster avec le fond */
+  color: white;
+  /* Coins arrondis pour un effet moderne */
+  border-radius: 10px;
+  /* Transition pour un effet fluide */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    /* Effet de levée au survol */
+    transform: translateY(-5px);
+    /* Ombre plus prononcée */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    width: 100%;
+    /* Coins arrondis pour l'image */
+    border-radius: 10px;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    /* Titre en blanc */
+    color: white;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    /* Texte en gris clair */
+    color: #e0e0e0;
+  }
+}
+
+.snapped {
+  /* Fond vert clair transparent */
+  background-color: rgba(lightgreen, 0.4);
+  /* Texte en vert foncé */
+  color: darkgreen;
+
+  button {
+    box-shadow: lightgreen 3px 3px 7px;
+    color: darkgreen;
+
+    &:active {
+      box-shadow: lightgreen 0 0 5px;
+    }
+  }
+}

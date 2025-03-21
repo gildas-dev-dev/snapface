@@ -1,0 +1,26 @@
+header {
+  text-align: center;
+  background-color: #EEE;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  // Transition fluide
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+    color: #007bff;
+  }
+}
+
+.active {
+  // Couleur différente pour le lien actif
+  color: #666;
+  // Soulignement pour le lien actif
+  text-decoration: underline;
+}

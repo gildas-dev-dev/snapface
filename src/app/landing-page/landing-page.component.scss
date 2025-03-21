@@ -1,0 +1,68 @@
+
+.flex-bloc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-block{
+  margin: 40px 0 100px 0;
+  flex-direction: column;
+}
+
+.custom-link {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  /* Couleur du texte */
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  /* Bordure bleue */
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  /* Transition fluide */
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.custom-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  /* Effet de lumière */
+  background: linear-gradient(90deg, transparent, rgba(0, 123, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.custom-link:hover {
+  /* Changement de couleur du texte */
+  color: white;
+  /* Fond bleu au survol */
+  background-color: #007bff;
+  /* Bordure plus foncée */
+  border-color: #0056b3;
+  /* Légère levée */
+  transform: translateY(-3px);
+  /* Ombre portée */
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.custom-link:hover::before {
+  /* Animation de l'effet de lumière */
+  left: 100%;
+}
+
+.custom-link:active {
+  /* Retour à la position initiale au clic */
+  transform: translateY(0);
+  /* Ombre plus petite */
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+button{
+  font-size: 18px;
+}
