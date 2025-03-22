@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FaceSnap } from './models/face-snap';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,16 @@ import { FaceSnap } from './models/face-snap';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {}
+export class AppComponent implements OnInit{
+
+
+
+  ngOnInit(): void {
+
+
+
+  }
+
+}
+
 
